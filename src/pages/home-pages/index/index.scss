@@ -1,0 +1,59 @@
+
+@import '../../../styles/style-config.scss';
+
+.p-index{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include image(data('./icons/bg.png'));
+    .logo-box{
+        height: r(220);
+        margin-top: r(50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: r(104);
+            height: r(112);
+            @include image(data('./icons/logo.png'));
+        }
+        .logo-font{
+            height: r(60);
+            width: r(170);
+            @include image(data('./icons/loading-font.png'));
+        }
+    }
+    .input-box{
+        width: r(303);
+        height: r(96);
+        margin: 0 auto;
+        border: r(1) solid #aaaaaa;
+        border-radius: r(8);
+        .input{
+            height: r(48);
+            display: flex;
+            .title{
+                width: r(90);
+                line-height: r(48);
+                text-align: center;
+                color: #555555;
+            }
+            .name{
+                height: 100%;
+            }
+        }
+    }
+    .btn-box{
+        width: r(303);
+        height: r(44);
+        text-align: center;
+        line-height: r(44);
+        background-color: #8dc932;
+        margin: r(11) auto;
+        border-radius: r(8);
+        color: #fff;
+        font-size: r(14)
+    }
+}
